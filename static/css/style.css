@@ -1,0 +1,58 @@
+*{
+    font-family: sans-serif;
+}
+
+body {
+    background-color: slategray;
+}
+
+
+.filters {
+    color: black;
+}
+
+.panel-heading h5 {
+    color: black;
+}
+
+#main-title {
+    position: relative;
+    background-color: black;
+    background-attachment: fixed;
+    background-position: top center;
+    background-size: cover;
+  }
+
+
+#main-title h1, h4 {
+    color: turquoise;
+}
+
+.table h4 {
+    color: maroon;
+}
+
+.table-striped>tbody>tr:nth-child(odd)>td, 
+.table-striped>tbody>tr:nth-child(odd)>th {
+   background-color: lightgray;
+ }
+
+ .table-striped>tbody>tr:nth-child(even)>td, 
+ .table-striped>tbody>tr:nth-child(even)>th {
+    background-color: darkgray;
+  }
+
+#ufo-table {
+    color: black;
+    font-size: 0.85em;
+}
+
+#no-data h3 {
+    color: lightsalmon;
+    background-color: maroon;
+    text-align: center;
+}
+
+.filter {
+    background-color: lightgray;
+}

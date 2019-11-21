@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title>UFO Sighting</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootswatch/4.3.1/spacelab/bootstrap.min.css">
+	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+	<link rel="stylesheet" href="../static/css/style.css">
+</head>
+
+<body>
+	<div class="container">
+		<div class="row">
+			<div class="col-md-6">
+				<img src="../static/images/ufo.jpg" class="img-fluid" alt="Responsive image">
+				<div id="main-title" class="text-center">
+					<h1>UFO Sighting</h1>
+					<h4>Truth may not be out there after all</h4>
+				</div>
+			</div>
+			<div class="col-md-6">
+				<aside class="filters">
+					<div class="panel panel-default">
+						<div class="panel-heading">
+							<h5>Enter Search Criteria</h5>
+						</div>
+						<div class="panel-body">
+							<form>
+								<div class="form-group">
+									<ul class="list-group" id="filters">
+										<li class="filter list-group-item">
+											<label>Enter Date</label>
+											<input class="form-control" id="datetime" type="text" placeholder="Date:1/1/2010">
+										</li>
+									</ul>
+								</div>
+								<button id="filter-btn" type="submit" class="btn btn-info" onkeyup="clickSelect()">Filter Table</button>
+								<button id="filter-btn" type="submit" class="btn btn-info" onkeyup="clickSelect()">Reset Table</button>
+							</form>
+						</div>
+					</div>
+				</aside>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-12">
+				<div id="table-area" class="">
+					<table id="ufo-table" class="table table-striped table-responsive">
+						<thead class="thead-dark">
+							<tr>
+								<th class="table-head">Date</th>
+								<th class="table-head">City</th>
+								<th class="table-head">State</th>
+								<th class="table-head">Country</th>
+								<th class="table-head">Shape</th>
+								<th class="table-head">Duration</th>
+								<th class="table-head">Comments</th>
+							</tr>
+						</thead>
+						<tbody></tbody>
+					</table>
+					<div id="no-data" class=""></div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.11.0/d3.js"></script>
+	<script src="../static/js/ufo_data.js"></script>
+	<script src="../static/js/ufo_app.js"></script>
+</body>
+
+</html>
